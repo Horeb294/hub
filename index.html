@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+    Horeb294
+
+  </title>
+
+  <script>
+
+      
+        // var n = prompt("what is your name?"); 
+        // alert("Hello" + n);
+        //   console.log(n);
+         
+        //  var myname = "Esther";
+
+             
+            
+
+        //   var num1 = prompt("Enter 1st number");
+        //   var num2 = prompt("Enter 2nd number");
+
+        // var sum = num1 + num2;
+        // alert(num1 + num2);
+
+        //   var firstname = "Esther";
+        //  var lastname = "Nyamekye";
+
+
+        //  alert(firstname + " " + lastname);
+
+        // conditionals
+        
+      
+    //   var age = prompt("age");
+    //   if(age >= 17) {
+    //       alert("welcome to the bar");
+    //   }else {
+    //       alert("children not allowed in here!");
+    //   }
+
+        //  var gender = prompt("gender");
+        // if (gender =="female") {
+        //     alert("welcome to my web page");
+        // }else {
+        //     alert("sorry, female only!");
+        // }
+
+        function detector(name, year_of_birth, drink) {
+        let min_age = 18;
+        let age = 2020 - year_of_birth;
+       
+        // if(age < min_age )
+
+        if(age < min_age && drink == "beer") {
+            alert ("Sorry, you are below the minimum age");
+        } else if (drink != "beer") {
+            alert("oya, drink!");
+        } else {
+            alert("Cheers to beer & life");
+
+        }
+       
+       
+
+        }
+        
+    //    let userName = prompt("what is your name?");
+    //    let year_of_birth = prompt("input year of birth");
+    //    let drink = prompt("drink type");
+
+     // detector(userName, year_of_birth, drink);
+
+
+
+
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+     <a href="about.html">
+        
+        About Us
+     </a>
+        <!-- The H1 represents a header 1 -->
+     <h1 class="horeb msg">welcome to my webpage</h1>
+     <p>
+         this is my first web project. Hurrayyy!!!!
+     </p>
+     <p class="msg">List of fruits</p>
+     <ul>
+         <li>Mango</li>
+         <li>Orange</li>
+         <li>Apple</li>
+         <li>banana</li>
+     </ul>
+     <hr>
+     <h1 style="color: rgb(255, 0, 0);">About my self</h1>
+     <p>
+         Esther Nyamekye is my name. I am student of University of Education,Winneba. I stay in Wa,in the upper west region of Ghana. 
+     </p>
+     <p class="msg";style="color: rgb(237, 100, 100)">These are the things i like;
+            <ul>
+                <li style="font-size: larger;">reading</li>
+                <li>making sales</li>
+                <li>eating</li>
+                <li style="color:darkkhaki">hanging out with friends</li>
+                <li>exercising</li>
+                <li class="horeb">coding</li>
+            </ul>
+
+               <img src="puppy3.jpg" alt="puppy" />
+
+     </p>
+    </hr>
+     <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim quod quo earum repudiandae iste quidem, consequatur id culpa consequuntur itaque in optio laborum beatae perspiciatis quos. Nam, dolorum laboriosam.
+     </p>
+
+      <br />
+      <br />
+      <br />
+
+       <div id="greetText"></div>
+      <input id="nameInput" type="text" placeholder="enter your name here" />
+      <button id="greetBtn">Greet!</button>
+
+
+      <script>
+
+        
+       let btn = document.getElementById("greetBtn");
+
+       btn.addEventListener("click", function () {
+        // alert("button clicked")
+
+       let msg = document.getElementById("greetText");
+       let name = document.getElementById("nameInput");
+
+       let val = name.value;
+       msg.innerText ="Hello, " + val;
+  });
+
+ 
+
+</script>
+
+ </body>   
+</html>
+
+
